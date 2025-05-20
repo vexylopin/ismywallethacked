@@ -85,3 +85,32 @@ input, button {
   margin-left: auto;
   margin-right: auto;
 }
+
+.icon-box {
+  background-color: #1E1E1E; /* black box */
+  padding: 15px 30px;
+  margin: 80px auto 0;
+  max-width: 600px;
+  border-radius: 12px;
+}
+
+.icon-nav {
+  display: flex;
+  justify-content: space-evenly;
+  gap: 0;
+}
+
+.icon-nav a {
+  display: inline-block;
+}
+
+.nav-icon {
+  width: 40px;
+  height: 40px;
+  cursor: pointer;
+  transition: filter 0.3s ease;
+}
+
+.icon-nav a:hover .nav-icon {
+  filter: brightness(0.8);
+}
