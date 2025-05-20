@@ -1,4 +1,4 @@
-const apiKey = 'YGICVWF3144XIYX3AXW2QIE2U1CH87S445';  // Your actual Polygonscan API key
+const apiKey = 'YGICVWF3144XIYX3AXW2QIE2U1CH87S445';
 const krawContract = '0x269C4d50A83c3b181e883163C8AE5031182c8162';
 
 async function checkWallet() {
@@ -25,14 +25,12 @@ async function checkWallet() {
       return;
     }
 
-    // Convert balance using BigInt to handle large numbers
     const balanceWei = BigInt(data.result);
     const decimals = BigInt(1e18);
     const wholePart = balanceWei / decimals;
     const decimalPart = balanceWei % decimals;
     const balance = Number(wholePart) + Number(decimalPart) / 1e18;
 
-    // Show funny result
     if (balance > 0) {
       resultDiv.innerText = `Your wallet holds ${balance.toLocaleString()} KRAW. \nSo yes, your wallet is hacked! 😂`;
       resultDiv.className = "result-hacked";
