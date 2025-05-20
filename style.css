@@ -34,6 +34,9 @@ input, button {
 #wallet {
   border-radius: 12px;
   border: none;
+  max-width: 400px;
+  width: 90%;
+  margin-bottom: 15px;
 }
 
 .check {
@@ -46,6 +49,8 @@ input, button {
   transition: background-color 0.3s ease;
   color: #000000;
   font-weight: bold;
+  max-width: 150px;
+  width: 90%;
 }
 
 .check:hover {
@@ -67,4 +72,16 @@ input, button {
 
 .logo {
   width: 100px;
+  max-width: 80%;
+  display: block;
+  margin: 0 auto 20px;
+}
+
+.disclaimer {
+  margin-top: 50px;
+  font-size: 12px;
+  color: #666;
+  max-width: 500px;
+  margin-left: auto;
+  margin-right: auto;
 }
