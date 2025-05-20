@@ -1,0 +1,70 @@
+body {
+  font-family: Arial, sans-serif;
+  text-align: center;
+  margin-top: 100px;
+  background-color: #111113;
+}
+
+input, button {
+  padding: 10px;
+  font-size: 16px;
+  margin: 5px;
+}
+
+.heading {
+  color: #ffffff;
+  margin-bottom: 0;
+}
+
+.hacked {
+  color: #DAFF01;
+}
+
+.subheading1 {
+  color: #DAFF01;
+  margin-top: 10px;
+  margin-bottom: 0;
+}
+
+.subheading2 {
+  color: #ffffff;
+  margin-top: 30px;
+}
+
+#wallet {
+  border-radius: 12px;
+  border: none;
+}
+
+.check {
+  border-radius: 12px;
+  border: none;
+  background-color: #DAFF01;
+  cursor: pointer;
+  padding: 10px 20px;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+  color: #000000;
+  font-weight: bold;
+}
+
+.check:hover {
+  background-color: #c9db00;
+}
+
+#result {
+  margin-top: 20px;
+  font-size: 20px;
+}
+
+.result-invalid,
+.result-hacked,
+.result-safe,
+.result-error,
+.result-checking {
+  color: #ffffff;
+}
+
+.logo {
+  width: 100px;
+}
