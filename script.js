@@ -32,12 +32,14 @@ async function checkWallet() {
     const balance = Number(wholePart) + Number(decimalPart) / 1e18;
 
     if (balance > 0) {
-      resultDiv.innerText = `Your wallet holds ${balance.toLocaleString()} KRAW. \nSo yes, your wallet is hacked! 😂`;
-      resultDiv.className = "result-hacked";
-    } else {
-      resultDiv.innerText = "Your wallet is secure, since it holds zero KRAW. 😌";
-      resultDiv.className = "result-safe";
-    }
+  resultDiv.innerText = `💀 Your wallet holds ${balance.toLocaleString()} KRAW.\nSo yes, your wallet is hacked! 😂`;
+  resultDiv.className = "result-hacked";
+
+  } else {
+  resultDiv.innerText = "✅ Your wallet is secure, since it holds zero KRAW. 😌";
+  resultDiv.className = "result-safe";
+  }
+
 
   } catch (error) {
     resultDiv.innerText = "Failed to check wallet. Please try again later.";
